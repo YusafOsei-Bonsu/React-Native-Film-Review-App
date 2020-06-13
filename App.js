@@ -13,17 +13,16 @@ const App = () => {
   ]);
 
   // Removes the selected to-do task
-  const pressHandler = (key) => {
-    setTodos((prevTodos) => {
-      return prevTodos.filter((todo) => todo.key !== key);
-    })
-  }
+  const pressHandler = (key) => setTodos((prevTodos) => prevTodos.filter((todo) => todo.key !== key));
+
+  // Appends new todo tasks into the list
+  const submitHandler = (text) => setTodos((prevTodos) => [{ text, key: Math.random().toString() }, ...prevTodos]);
 
   return (
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
-        <AddTodo />
+        <AddTodo submitHandler={submitHandler} />
         <View style={styles.list}>
           <FlatList 
             data={todos}
