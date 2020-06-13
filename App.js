@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './components/Header.jsx';
 import TodoItem from './components/TodoItem.jsx';
-import AddTodo from './components/AddTodo.jsx';
+import AddTodo from './components/addTodo.jsx';
 
 const App = () => {
   // Todo items
