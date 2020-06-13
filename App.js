@@ -11,6 +11,13 @@ const App = () => {
     { text: "coding", key: '3' }
   ]);
 
+  // Removes the selected to-do task
+  const pressHandler = (key) => {
+    setTodos((prevTodos) => {
+      return prevTodos.filter((todo) => todo.key !== key);
+    })
+  }
+
   return (
     <View style={styles.container}>
       <Header />
@@ -20,7 +27,7 @@ const App = () => {
           <FlatList 
             data={todos}
             renderItem={({ item }) => (
-              <TodoItem item={item}/>
+              <TodoItem item={item} pressHandler={pressHandler}/>
             )}
           />
         </View>
