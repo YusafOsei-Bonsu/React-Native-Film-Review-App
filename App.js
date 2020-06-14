@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Alert } from 'react-native';
 import Header from './components/Header.jsx';
 import TodoItem from './components/TodoItem.jsx';
 import AddTodo from './components/addTodo.jsx';
@@ -16,7 +16,18 @@ const App = () => {
   const pressHandler = (key) => setTodos((prevTodos) => prevTodos.filter((todo) => todo.key !== key));
 
   // Appends new todo tasks into the list
-  const submitHandler = (text) => setTodos((prevTodos) => [{ text, key: Math.random().toString() }, ...prevTodos]);
+  const submitHandler = (text) => {
+    // Check if the text is valid
+    if (text.length > 3) {
+      // update state
+      setTodos((prevTodos) => [{ text, key: Math.random().toString() }, ...prevTodos]);
+    } else {
+      // Inform the user of the error
+      Alert.alert("Oops!", "Todos must be over 3 characters longs!", [
+        {text: "Understood", onPress: () => console.log("alert closed")}
+      ]);
+    }
+  }
 
   return (
     <View style={styles.container}>
