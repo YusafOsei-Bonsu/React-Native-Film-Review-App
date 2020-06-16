@@ -5,7 +5,7 @@ import globalStyles from '../style/globalStyles.js';
 const Home = () => {
     return (
         <View style={globalStyles.container}>
-            <Text style={globalStyles.titleText}>Home Screen</Text>
+            <Text style={globalStyles.titleText}>This is the Home screen</Text>
         </View>
     );
 }
