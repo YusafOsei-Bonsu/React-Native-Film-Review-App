@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
-import Navigator from './routes/Navigator.js';
+import Navigator from './routes/Navigator.jsx';
 
 const getFonts = () => Font.loadAsync({
   'nunito-regular': require('./assets/Fonts/Nunito-Regular.ttf'),
@@ -12,7 +12,7 @@ const App = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   if (fontsLoaded) {
-    return Navigator();
+    return <Navigator />;
   } else {
     return (
       <AppLoading 
