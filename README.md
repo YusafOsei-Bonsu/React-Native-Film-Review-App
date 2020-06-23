@@ -12,7 +12,7 @@ This repository presents my learning of React Native (RN). I used [Net Ninja's R
     2. `git branch -m <new_name>` to rename the local branch.
 
 ## Blockers/Resolutions
-- In regards to the `createAppContainer()` method, I kept recieving the following error: `TypeError: Object(...) is not a function`. To resolve it, I wrote the below code (`routes/Navigator.js`)...
+- In regards to the `createAppContainer()` method, I kept recieving the following error: `TypeError: Object(...) is not a function`. I resolved it by writing the below code (`routes/Navigator.js`)...
 
 ```javascript
 const Stack = createStackNavigator();
