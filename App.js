@@ -12,7 +12,7 @@ const App = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   if (fontsLoaded) {
-    return Navigator();
+    return <Navigator />;
   } else {
     return (
       <AppLoading 
