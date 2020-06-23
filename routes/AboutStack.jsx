@@ -14,7 +14,7 @@ const AboutStack = ({ navigation }) => {
                 headerTintColor: '#fff',
                 headerTitleStyle: { fontWeight: 'bold' }
             }}>
-            <Stack.Screen name="About" component={About} options={{ headerTitle: () => <CustomHeader navigation={navigation}/> }} />
+            <Stack.Screen name="About" component={About} options={{ headerTitle: () => <CustomHeader navigation={navigation} title="About" /> }} />
         </Stack.Navigator>
     );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
-const CustomHeader = ({ navigation }) => {
+const CustomHeader = ({ navigation, title="React Native" }) => {
 
     // Open drawer menu after pressing Menu button
     const openMenu = () => navigation.openDrawer();
@@ -11,7 +11,7 @@ const CustomHeader = ({ navigation }) => {
         <View style={styles.header}>
          <MaterialIcons name="menu" size={30} onPress={openMenu} style={styles.icon} />
             <View>
-                <Text style={styles.headerText}>React Native</Text>
+                <Text style={styles.headerText}>{ title }</Text>
             </View>
         </View>
     )

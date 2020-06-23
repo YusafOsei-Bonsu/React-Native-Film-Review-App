@@ -18,7 +18,7 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen 
                 name="Home" 
                 component={Home} 
-                options={{ headerTitle: () => <CustomHeader navigation={navigation} /> }} />
+                options={{ headerTitle: () => <CustomHeader navigation={navigation} title="Home" /> }} />
             <Stack.Screen 
                 name="ReviewDetails"
                 component={ReviewDetails}
