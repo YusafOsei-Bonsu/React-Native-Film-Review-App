@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, Button } from 'react-native';
+import Card from '../shared/Card.jsx';
 import globalStyles from '../style/globalStyles.js';
 
 const ReviewDetails = ({ navigation, route }) => {
@@ -9,11 +10,11 @@ const ReviewDetails = ({ navigation, route }) => {
 
     return (
         <View style={globalStyles.container}>
-            <Text>{ title }</Text>
-            <Text>{ body }</Text>
-            <Text>{ rating }</Text>
-            {/* Button press navigates user to the homepage */}
-            <Button title="Back to Homepage" onPress={() => navigation.navigate("Home")} />
+            <Card>
+                <Text>{ title }</Text>
+                <Text>{ body }</Text>
+                <Text>{ rating }</Text>
+            </Card>
         </View>
     )
 }
