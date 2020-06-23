@@ -30,7 +30,8 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={globalStyles.container}>
-            <FlatList 
+            <FlatList
+                keyExtractor={item => item.key.toString()} 
                 data={reviews}
                 renderItem={({item}) => (
                     <TouchableOpacity onPress={() => navigation.navigate('ReviewDetails', item)}>
