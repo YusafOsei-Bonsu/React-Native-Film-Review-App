@@ -1,11 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
-const CustomHeader = () => {
+const CustomHeader = ({ navigation }) => {
+
+    // Open drawer menu after pressing Menu button
+    const openMenu = () => navigation.openDrawer();
+
     return (
         <View style={styles.header}>
-         {/* Icon for menu */}
+         <MaterialIcons name="menu" size={30} onPress={openMenu} style={styles.icon} />
             <View>
                 <Text style={styles.headerText}>React Native</Text>
             </View>
@@ -21,17 +25,20 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'red'
+        backgroundColor: '#1E90FF',
     },
     
     headerText: {
         fontWeight: 'bold',
-        fontSize: 20,
-        flexDirection: 'row',
-        color: '#333',
+        fontSize: 30,
+        color: '#fff',
         letterSpacing: 1
-    }
+    },
 
+    icon: {
+        position: 'absolute',
+        left: 16
+    }
 });
 
 export default CustomHeader;
