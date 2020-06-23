@@ -1,6 +1,12 @@
 This repository presents my learning of React Native (RN). I used [Net Ninja's RN tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ) to build my knowledge of RN. 
 
 ## Knowledge I gained from this learning experience
+- State.
+- Scroll views.
+- Touchable components.
+- CSS styling in React Native.
+- How to create a RN to-do list.
+- How to create a RN reviews app.
 - To rename a branches using Git, I performed the following steps (in terminal):
     1. `git checkout <old_name>` to navigate to the branch I want to rename.
     2. `git branch -m <new_name>` to rename the local branch.
