@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View } from 'react-native';
 import Card from '../shared/Card.jsx';
 import globalStyles from '../style/globalStyles.js';
 
