@@ -25,9 +25,6 @@ const Home = ({ navigation }) => {
         },
     ]);
 
-    // Navigates to the "Review Details" page after button press
-    const navHandler = () => navigation.push('ReviewDetails');
-
     return (
         <View style={globalStyles.container}>
             <FlatList
