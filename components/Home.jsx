@@ -3,6 +3,7 @@ import { Text, View, FlatList, TouchableOpacity, Modal, StyleSheet } from 'react
 import Card from '../shared/Card.jsx';
 import globalStyles from '../style/globalStyles.js';
 import { MaterialIcons } from '@expo/vector-icons';
+import ReviewForm from '../components/ReviewForm.jsx';
 
 const Home = ({ navigation }) => {
     const [modalOpen, setModal] = useState(false);
@@ -39,7 +40,7 @@ const Home = ({ navigation }) => {
                         onPress={() => setModal(false)} 
                         style={ styles.modalToggle }
                         />
-                    <Text>This is a modal</Text>
+                    <ReviewForm />
                 </View>
             </Modal>
             
