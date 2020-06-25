@@ -10,8 +10,7 @@ const AboutStack = ({ navigation }) => {
         <Stack.Navigator 
             initialRouteName="About" 
             screenOptions={{
-                headerStyle: { backgroundColor: '#1E90FF' },
-                headerTintColor: '#fff',
+                headerTintColor: '#000',
                 headerTitleStyle: { fontWeight: 'bold' }
             }}>
             <Stack.Screen name="About" component={About} options={{ headerTitle: () => <CustomHeader navigation={navigation} title="About" /> }} />
