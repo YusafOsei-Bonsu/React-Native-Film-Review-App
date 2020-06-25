@@ -14,13 +14,13 @@ const Home = ({ navigation }) => {
         },
         { 
             title: "The Dark Knight Rises", 
-            rating: 5, 
+            rating: 4, 
             body: "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
             key: 2
         },
         { 
             title: "Joker", 
-            rating: 5, 
+            rating: 3, 
             body: "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society...",
             key: 3 
         },
