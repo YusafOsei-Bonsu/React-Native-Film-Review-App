@@ -12,6 +12,7 @@ This repository presents my learning of React Native (RN). I used [Net Ninja's R
     2. `git branch -m <new_name>` to rename the local branch.
 
 ## Blockers/Resolutions
+- When learning React Native, I would encounter this error: `Module AppRegistry is not a registered callable module (calling runApplication)`, multiple times. To resolve it, I had to restart the Expo server, which rebuilds the app. 
 - In regards to the `createAppContainer()` method, I kept recieving the following error: `TypeError: Object(...) is not a function`. I resolved it by writing the below code (`routes/Navigator.js`)...
 
 ```javascript
