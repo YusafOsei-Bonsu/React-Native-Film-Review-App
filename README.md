@@ -5,6 +5,7 @@ This repository presents my learning of React Native (RN). I used [Net Ninja's R
 - Scroll views.
 - Touchable components.
 - CSS styling in React Native.
+- Stack & Drawer Navigation
 - How to create a RN to-do list.
 - How to create a RN reviews app.
 - To rename a branches using Git, I performed the following steps (in terminal):
