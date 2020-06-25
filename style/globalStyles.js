@@ -17,4 +17,17 @@ const globalStyles = StyleSheet.create({
     }
 });
 
+// All the possible heart ratings (images)
+export const images = {
+
+    ratings: {
+        '1': require("../assets/oneHeart.png"),
+        '2': require("../assets/twoHearts.png"),
+        '3': require("../assets/threeHearts.png"),
+        '4': require("../assets/fourHearts.png"),
+        '5': require("../assets/fiveHearts.png"),
+    }
+
+};
+
 export default globalStyles;
