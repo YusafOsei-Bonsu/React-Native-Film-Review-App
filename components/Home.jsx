@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { Text, View, FlatList, TouchableOpacity, Modal, StyleSheet } from 'react-native';
 import Card from '../shared/Card.jsx';
 import globalStyles from '../style/globalStyles.js';
+import { MaterialIcons } from '@expo/vector-icons';
 
 const Home = ({ navigation }) => {
-
+    const [modalOpen, setModal] = useState(false);
     const [reviews, setReviews] = useState([
         { 
             title: "Avengers: Infinity War", 
@@ -28,6 +29,28 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={globalStyles.container}>
+            {/* The Modal */}
+            <Modal visible={modalOpen} animationType="slide">
+                <View style={styles.modalContent}>
+                    {/* Toggles the modal off */}
+                    <MaterialIcons 
+                        name="close" 
+                        size={24} 
+                        onPress={() => setModal(false)} 
+                        style={ styles.modalToggle }
+                        />
+                    <Text>This is a modal</Text>
+                </View>
+            </Modal>
+            
+            {/* Toggles the modal on */}
+            <MaterialIcons 
+                name="add"
+                size={24}
+                style={styles.modalToggle}
+                onPress={() => setModal(true)}
+            />
+
             <FlatList
                 keyExtractor={item => item.key.toString()} 
                 data={reviews}
@@ -42,5 +65,26 @@ const Home = ({ navigation }) => {
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+
+    modalToggle: {
+        marginBottom: 10,
+        borderWidth: 1,
+        borderColor: "#f2f2f2",
+        padding: 10,
+        borderRadius: 10,
+        alignSelf: "center"
+    },
+
+    modalClose: {
+        marginTop: 20,
+        marginBottom: 0
+    },
+
+    modalContent: {
+        flex: 1
+    }
+});
 
 export default Home;
