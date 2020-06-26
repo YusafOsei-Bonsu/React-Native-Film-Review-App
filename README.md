@@ -1,4 +1,4 @@
-This repository presents my learning of React Native (RN). I used [Net Ninja's RN tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ) to build my knowledge of RN. Using this knowledge, I created a RN film review app.  
+This repository presents my learning of React Native (RN). I used [Net Ninja's React Native tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ) to build my knowledge of RN. Using this knowledge, I created a RN film review app.  
 
 ## Knowledge I gained from this learning experience
 - State.
