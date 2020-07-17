@@ -1,5 +1,10 @@
 This repository presents my learning of React Native (RN). I used [Net Ninja's React Native tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ) to build my knowledge of RN. Using this knowledge, I created a RN film review app.  
 
+To run this app...
+1. Clone the repository.
+2. Run an Android emulator.
+3. From the root ("myfirstproject"), Enter `npm start`/`expo start` in the terminal.
+
 ## Knowledge I gained from this learning experience
 - State.
 - Modals.
